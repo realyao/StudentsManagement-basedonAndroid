@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.he.studenmanagement.MainActivity">
+
+
+    <TextView
+        android:id="@+id/main_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_activity_admin_pic"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/main_activity_admin_pic"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
+        android:text="欢迎使用  课程管理系统"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_activity_title"
+        android:layout_marginTop="54dp"
+        android:gravity="center"
+        android:text="选择登陆身份"
+        android:textSize="20sp" />
+
+
+    <!--将图片设置为圆形-->
+    <com.example.he.studenmanagement.tools.RoundImageView
+        android:id="@+id/main_activity_admin_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:src="@drawable/teacher"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/main_activity_admin"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/main_activity_admin_pic"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@+id/main_activity_admin_pic"
+        android:layout_toRightOf="@+id/main_activity_admin_pic"
+        android:background="@color/title_bar"
+        android:text="教师入口" />
+
+    <com.example.he.studenmanagement.tools.RoundImageView
+        android:id="@+id/main_activity_student_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/main_activity_admin_pic"
+        android:layout_alignStart="@+id/main_activity_admin_pic"
+        android:layout_alignTop="@+id/main_activity_student"
+        android:src="@drawable/boy"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/main_activity_student"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/main_activity_admin"
+        android:layout_alignLeft="@+id/main_activity_admin"
+        android:layout_alignRight="@+id/main_activity_admin"
+        android:layout_alignStart="@+id/main_activity_admin"
+        android:layout_below="@+id/main_activity_admin"
+        android:layout_marginTop="96dp"
+        android:background="@color/title_bar"
+        android:text="学生入口" />
+
+
+</RelativeLayout>

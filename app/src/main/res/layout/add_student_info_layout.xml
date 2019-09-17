@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_student_layout_name"
+        android:layout_alignEnd="@+id/number"
+        android:layout_alignRight="@+id/number"
+        android:text="姓        名："
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/add_student_layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/name"
+        android:layout_toRightOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_student_layout_sex"
+        android:layout_alignLeft="@+id/number"
+        android:layout_alignStart="@+id/number"
+        android:text="性        别："
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/add_student_layout_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_student_layout_password"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/sex"
+        android:layout_toRightOf="@+id/sex"
+        android:hint="男/女" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_student_layout_id"
+        android:layout_toLeftOf="@+id/add_student_layout_sure"
+        android:layout_toStartOf="@+id/add_student_layout_sure"
+        android:text="学        号："
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/add_student_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_student_layout_name"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/name"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_student_layout_number"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:text="手  机  号："
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/add_student_layout_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/add_student_layout_sex"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/name"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_student_layout_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="密        码："
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/add_student_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_student_layout_id"
+        android:layout_alignStart="@+id/add_student_layout_id"
+        android:layout_below="@+id/add_student_layout_id"
+        android:layout_marginTop="14dp"
+        android:hint="请输入6位密码"
+        android:inputType="numberDecimal" />
+
+
+    <TextView
+        android:id="@+id/math"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_student_layout_chinese"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="科目A成绩："
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/add_student_layout_math"
+        style="@android:style/Widget.Material.Light.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_student_layout_number"
+        android:layout_marginTop="29dp"
+        android:layout_toEndOf="@+id/math"
+        android:layout_toRightOf="@+id/math"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/chinese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_student_layout_english"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="科目B成绩："
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/add_student_layout_chinese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_student_layout_math"
+        android:layout_toEndOf="@+id/chinese"
+        android:layout_toRightOf="@+id/chinese"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_student_layout_english"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="科目C成绩："
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/add_student_layout_english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_student_layout_chinese"
+        android:layout_alignStart="@+id/add_student_layout_chinese"
+        android:layout_below="@+id/add_student_layout_chinese"
+        android:inputType="numberDecimal" />
+
+
+    <Button
+        android:id="@+id/add_student_layout_sure"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/number"
+        android:layout_toRightOf="@+id/number"
+        android:background="@color/title_bar"
+        android:gravity="center"
+        android:text="添加" />
+
+
+</RelativeLayout>
